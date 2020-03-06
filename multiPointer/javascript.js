@@ -15,7 +15,8 @@ function sumZeroNaive(arr){
 function sumZeroRef(arr){
     let left = 0;
     let right = arr.length - 1;
-    //left < right  //rather than//  left <= right  | this is to ensure that it doesn't match 0 and 0 -- a false positive which doesn't follow the problem guidelines
+    //left < right  | rather than |  left <= right //
+    //this is to ensure that it doesn't match 0 and 0 -- a false positive which doesn't follow the problem guidelines
     while(left < right){
         let sum = arr[left] + arr[right];
         if(sum === 0){
@@ -53,7 +54,7 @@ function countUniqueValues(arr){
 
 
 
-//further understanding
+//further understanding -- sliding window(unofficial name)
 
 //naive code
 
